@@ -1,0 +1,34 @@
+body
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgb(245,245,245);
+
+#app 
+  margin: 2rem auto;
+  border: thin solid rgb(230,230,230);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px -2px 5px rgb(225,225,225);
+  
+h1 
+  font-size: $heading-font;
+
+h2 
+  font-size: $sub-heading-font;
+
+p, label, input 
+  font-size: $normal-font;
+
+button
+  font-size: $action-font !important;
+  background: $brand-primary-color !important;
+  border-color: $brand-primary-color !important;
+  box-shadow: none !important;
+
+@media all and (max-width: 767px)
+  #app 
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    border-radius: 5px;
