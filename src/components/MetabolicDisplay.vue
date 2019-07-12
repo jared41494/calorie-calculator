@@ -35,44 +35,44 @@ export default {
   name: 'MetabolicDisplay',
   props: ['user'],
   filters: {
-    twoDecimals(val) {
+    twoDecimals (val) {
       return val.toFixed(2)
     }
   },
   computed: {
-    bmi: function() {
+    bmi: function () {
       return (703 * (this.user.weight / this.user.height ** 2))
     },
-    bmiOutcome: function() {
+    bmiOutcome: function () {
       if (this.bmi < 18.5) {
-        return "Underweight"
+        return 'Underweight'
       } else if (this.bmi < 24.9) {
-        return "Normal Weight"
+        return 'Normal Weight'
       } else if (this.bmi < 29.9) {
-        return "Overweight"
+        return 'Overweight'
       } else if (this.bmi >= 30) {
-        return "Obese"
+        return 'Obese'
       }
 
       return ''
     },
-    bmr: function() {
+    bmr: function () {
       if (this.user.gender === 1) {
         return ((6.25 * this.user.weight) + (12.7 * this.user.height) - (6.76 * this.user.age) + 66)
       } else {
         return ((4.35 * this.user.weight) + (4.7 * this.user.height) - (4.68 * this.user.age) + 655)
       }
     },
-    tdee: function() {
-      if (this.user.activityLevel == 1) {
+    tdee: function () {
+      if (this.user.activityLevel === 1) {
         return this.bmr * 1.2
-      } else if (this.user.activityLevel == 2) {
+      } else if (this.user.activityLevel === 2) {
         return this.bmr * 1.375
-      } else if (this.user.activityLevel == 3) {
+      } else if (this.user.activityLevel === 3) {
         return this.bmr * 1.55
-      } else if (this.user.activityLevel == 4) {
+      } else if (this.user.activityLevel === 4) {
         return this.bmr * 1.725
-      } else if (this.user.activityLevel == 5) {
+      } else if (this.user.activityLevel === 5) {
         return this.bmr * 1.9
       }
 
@@ -81,7 +81,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

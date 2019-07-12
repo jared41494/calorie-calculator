@@ -74,15 +74,15 @@ export default {
   data () {
     return {
       genders: [
-        {text: 'Male', value: 1},
-        {text: 'Female', value: 2}
+        { text: 'Male', value: 1 },
+        { text: 'Female', value: 2 }
       ],
       activityLevels: [
-        {text: 'Sedentary', value: 1},
-        {text: 'Lightly Active', value: 2},
-        {text: 'Moderately Active', value: 3},
-        {text: 'Very Active', value: 4},
-        {text: 'Extremely Active', value: 5}
+        { text: 'Sedentary', value: 1 },
+        { text: 'Lightly Active', value: 2 },
+        { text: 'Moderately Active', value: 3 },
+        { text: 'Very Active', value: 4 },
+        { text: 'Extremely Active', value: 5 }
       ]
     }
   },
@@ -97,9 +97,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>
-
-
