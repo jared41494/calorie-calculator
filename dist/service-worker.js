@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.b01c4fb73d50256e452b9a4c934691c7.js"
+  "/precache-manifest.7d5b7b7712235ccd5cd069771356107b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "calorie-calculator"});
